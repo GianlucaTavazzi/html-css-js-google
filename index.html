@@ -5,6 +5,7 @@
         <title></title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/6369196dab.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
@@ -15,10 +16,40 @@
                         <p>Google Store</p>
                     </div>
                     <div class="nav-right">
-                        <p>Gmail</p>
-                        <p>Immagini</p>
-                        <i class="fas fa-th"></i>
-                        <p id="account">G</p>
+                        <ul>
+                            <li><p>Gmail</p></li>
+                            <li><p>Immagini</p></li>
+                            <li>
+                                <i class="fas fa-th"></i>
+                                <ul class="dropdown">
+                                    <li>
+                                        <i class="fab fa-google"></i>
+                                        <p>Ricerca</p>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p>Maps</p>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-youtube"></i>
+                                        <p>YouTube</p>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-google-play"></i>
+                                        <p>Google Play</p>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-newspaper"></i>
+                                        <p>News</p>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        <p>Gmail</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><p id="account">G</p></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -59,5 +90,6 @@
                 </div>
             </div>
         </footer>
+        <script src="main.js" charset="utf-8"></script>
     </body>
 </html>

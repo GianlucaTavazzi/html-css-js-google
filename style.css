@@ -14,7 +14,7 @@ nav{
     justify-content: space-between;
 }
 
-.nav-left p, .nav-right p{
+.nav-left p, .nav-right li{
     display: inline-block;
     line-height: 75px;
     padding-right: 20px;
@@ -25,6 +25,34 @@ nav{
     vertical-align: middle;
     padding-right: 25px;
     opacity: .55;
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    width: 350px;
+    top: 75px;
+    right: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.dropdown i{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.dropdown li{
+    line-height: 1;
+    width: 100px;
+    height: 100px;
+    padding: 0;
 }
 
 #account{
@@ -99,7 +127,11 @@ footer{
 
 .footer-top{
     line-height: 50px;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.footer-bottom{
+    border-top: 1px solid grey;
 }
 
 .footer-bottom .container{
